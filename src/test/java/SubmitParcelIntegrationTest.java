@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class SubmitParcelIntegrationTest {
     @Test
     public void test() throws IOException {
-        String url = "http://springbootdeploy-env.eba-vp3nzhrt.us-east-1.elasticbeanstalk.com/parcel/PYJRB4HZ6";
+        String url = "http://swkomtest-env.us-east-1.elasticbeanstalk.com/parcel/PYJRB4HZ6";
         String requestString = "{\"weight\":1,\"recipient\":{\"name\":\"Rudi\",\"street\":\"Hauptstrasse 1\",\"postalCode\":\"A-1020\",\"city\":\"Vienna\",\"country\":\"Austria\"},\"sender\":{\"name\":\"Susi\",\"street\":\"Wasserzeile 12\",\"postalCode\":\"A-2111\",\"city\":\"Tresdorf\",\"country\":\"Austria\"}}";
 
         HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
